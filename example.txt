@@ -1,0 +1,4 @@
+# This is an example of a file containing phone numbers and the corresponding URLs.
+
+6175551212 https://handler.twilio.com/twiml/EH5652efb9fb7a4722a69b196e9f3c336d  # Play cowbell from TwiML Bin
+3395553456 https://dancing-owl-0381.twil.io/tosipdomain                         # Forward call to SIP Domain from Function
