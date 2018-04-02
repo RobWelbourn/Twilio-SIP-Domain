@@ -26,4 +26,4 @@ Make sure the function web page is open when you make a test invocation, so that
 Once you have completed testing, make sure you check the 'Check for valid Twilio signature' checkbox, for security reasons.
 
 ## In Production
-If there any problems with running the function, you should check the Twilio console debugger for Notification errors, in particular 404 errors if the phone number was not found, and you didn't specify a catch-all URL.
+If there any problems with running the function, you should check the Twilio console debugger for Notification errors, in particular _404_ errors if the phone number was not found, and you didn't specify a catch-all URL.
