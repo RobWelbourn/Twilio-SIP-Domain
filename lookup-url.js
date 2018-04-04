@@ -5,7 +5,7 @@ function loadUrls(path) {
    let fs = require('fs');
    const text = fs.readFileSync(path).toString('utf-8');
    const lines = text.split(/\r\n|\n/);
-   const lookup = {}
+   const lookup = {};
 
    for (var line of lines) {
        line = line.trim();
@@ -50,8 +50,8 @@ exports.handler = function(context, event, callback) {
    const response = new Twilio.twiml.VoiceResponse();
    const filename = event.Filename;
    const defaultUrl = event.DefaultUrl; 
-   const expPhoneNumber = /^sip:((\+)?[0-9]+)/;    // Regex for numeric part of To URI
    const toUri = event.To;
+   const expPhoneNumber = /^sip:((\+)?[0-9]+)/;    // Regex for numeric part of To URI
    const matchNumber = expPhoneNumber.exec(toUri);
    const toPhone = matchNumber ? matchNumber[1] : null;
 
